@@ -1,0 +1,15 @@
+{
+  "name": "social_network",
+  "version": "1.0.0",
+  "description": "Techub Project About Social Network",
+  "main": "app.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebiskver/Social-Network.git"
+  },
+  "author": "Nika Sepiskveradze & Tornike Gagadze",
+  "license": "MIT"
+}

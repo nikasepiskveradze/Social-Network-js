@@ -1,0 +1,12 @@
+@font-face {
+  font-family: SFUIText-Regular;
+  src: url(../font/SFUIText-Regular.ttf);
+}
+
+html {
+  font-size: $html-font-size;
+}
+
+body {
+  font-family: SFUIText-Regular;
+}

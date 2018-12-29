@@ -8,9 +8,14 @@
 // Generic
 @import "../../../node_modules/css-reset-and-normalize/scss/reset-and-normalize.scss";
 @import "./generic/box-sizing";
+@import "./generic/shared";
 
 // Elements
 @import "./elements/headings";
+@import "./elements/paragraph";
+@import "./elements/anchor";
+@import "./elements/lists";
+@import "./elements/img";
 
 // Components
 

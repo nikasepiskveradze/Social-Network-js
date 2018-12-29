@@ -420,3 +420,54 @@ template {
 
 [hidden] {
   display: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: SFUIText-Regular;
+  src: url(../font/SFUIText-Regular.ttf); }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-family: SFUIText-Regular; }
+
+h1 {
+  font-size: 3.2rem; }
+
+h2 {
+  font-size: 2.4rem; }
+
+h3 {
+  font-size: 1.872rem; }
+
+h4 {
+  font-size: 1.6rem; }
+
+h5 {
+  font-size: 1.328rem; }
+
+h6 {
+  font-size: 1.2rem; }
+
+p {
+  font-size: 1.6rem; }
+
+a {
+  font-size: 1.6rem;
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+li {
+  font-size: 1.6rem; }
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto; }

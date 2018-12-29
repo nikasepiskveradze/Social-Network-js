@@ -9,7 +9,106 @@
 </head>
 <body>
 
-  <h1>Social Network</h1>
+  <header class="fb-header">
+    <div class="container">
+      <h1 class="fb-header__brand">Facebook</h1>
+
+      <form class="fb-login">
+        <div class="fb-login__item">
+          <label for="email">Email or Phone</label>
+          <input type="text" id="email">
+        </div>
+
+        <div class="fb-login__item">
+          <label for="password">Password</label>
+          <input type="password" id="password">
+        </div>
+
+        <div class="fb-login__item">
+          <input type="submit" value="Log In">
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <main class="fb-main">
+    <div class="container">
+      <div class="fb-welcome">
+        <h2>Connect with friends and the world around you on Faceebook.</h2>
+
+        <div class="fb-welcome__item">
+          <img src="dist/img/icons/feed.png" alt="Feed">
+          <span><strong>See photos and updates</strong> from friends in News Feed.</span>
+        </div>
+        <div class="fb-welcome__item">
+          <img src="dist/img/icons/star.png" alt="Star">
+          <span><strong>Share what's new</strong> in your life on your Timeline.</span>
+        </div>
+        <div class="fb-welcome__item">
+          <img src="dist/img/icons/chain.png" alt="Chain">
+          <span><strong>Find more</strong> of what you're looking for with Facebook Search.</span>
+        </div>
+      </div>
+
+      <div class="fb-registration">
+        <h2>Sign Up</h2>
+        <h3>It's free and always will be.</h3>
+
+        <form class="fb-register">
+          <div class="fb-register__item">
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last name"> 
+          </div>
+
+          <div class="fb-register__item">
+            <input type="email" placeholder="Mobile number or email">
+          </div>
+
+          <div class="fb-register__item">
+            <input type="password" placeholder="New password">
+          </div>
+
+          <div class="fb-register__item">
+            <label for="birth">Birthdat:</label>
+            <input type="date">
+          </div>
+
+          <div class="fb-register__item">
+            <input type="radio" value="female" id="female">
+            <label for="female"> Female</label>
+
+            <input type="radio" value="male" id="male">
+            <label for="male"> Male</label>
+          </div>
+
+          <div class="fb-register__item">
+            <p>By clicking Sign Up, you agree to our Terms, Data Policy and Cookies Policy. You may receive SMS Notifications from us and can opt out any time.</p>
+          </div>
+
+          <div class="fb-register__item">
+            <input type="submit" value="Sign Up">
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="fb-footer">
+    <div class="container">
+      <ul class="fb-footer__nav">
+        <li><a href="#">Sign Up</a></li>
+        <li><a href="#">Log In</a></li>
+        <li><a href="#">Messenger</a></li>
+        <li><a href="#">Facebook Lite</a></li>
+        <li><a href="#">Mobile</a></li>
+        <li><a href="#">Find Friends</a></li>
+        <li><a href="#">People</a></li>
+        <li><a href="#">Profiles</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Places</a></li>
+      </ul>
+    </div>
+  </footer>
 
   <script src="dist/js/app.bundle.js"></script>
 </body>

@@ -1,0 +1,26 @@
+.fb-footer {
+  padding: 2.2em 0;
+
+  &__lang-nav {
+    padding: 0.8em 0;
+    margin-bottom: 0.8em;
+    border-bottom: 1px solid #dddfe2;
+  }
+
+  &__copyright {
+    font-size: $size-11;
+    margin: 1.81em 0 0;
+  }
+
+  a {
+    font-size: $size-12;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  li {
+    margin-right: 1em;
+  }
+}

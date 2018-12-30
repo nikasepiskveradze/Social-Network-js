@@ -583,6 +583,22 @@ input {
     .fb-register__item__desc a:hover {
       text-decoration: underline; }
 
+.fb-footer {
+  padding: 2.2em 0; }
+  .fb-footer__lang-nav {
+    padding: 0.8em 0;
+    margin-bottom: 0.8em;
+    border-bottom: 1px solid #dddfe2; }
+  .fb-footer__copyright {
+    font-size: 1.1rem;
+    margin: 1.81em 0 0; }
+  .fb-footer a {
+    font-size: 1.2rem; }
+  .fb-footer a:hover {
+    text-decoration: underline; }
+  .fb-footer li {
+    margin-right: 1em; }
+
 .flex-row {
   display: flex; }
 

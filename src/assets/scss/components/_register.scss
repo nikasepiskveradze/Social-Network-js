@@ -16,6 +16,10 @@
       display: block;
     }
 
+    &--gender {
+      padding: 1em 1em 0;
+    }
+
     &__gender {
       font-size: $size-18;
       padding: 0.27em 0.24em;
@@ -24,8 +28,9 @@
     &__desc {
       font-size: $size-11;
       width: 28.72em;
-      margin: 1em 0;
+      margin: 1.5em 0 0;
       color: $fb-welcome-desc;
+      line-height: 1.5;
 
       a {
         font-size: $size-11;

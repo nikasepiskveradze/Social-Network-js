@@ -10,3 +10,15 @@ html {
 body {
   font-family: SFUIText-Regular;
 }
+
+.container, .container-fluid {
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 980px;
+}
+
+.container-fluid {
+  
+}

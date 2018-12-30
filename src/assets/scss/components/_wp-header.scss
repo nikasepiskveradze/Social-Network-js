@@ -1,0 +1,16 @@
+.fb-header {
+  background: $fb-header-bg;
+  padding: 1.6em 0 0.7em;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__brand {
+    width: 171px;
+    height: 34px;
+    margin-top: 0.3125em;
+  }
+}

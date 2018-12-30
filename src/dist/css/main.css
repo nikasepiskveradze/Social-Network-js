@@ -436,6 +436,12 @@ html {
 body {
   font-family: SFUIText-Regular; }
 
+.container, .container-fluid {
+  margin: 0 auto; }
+
+.container {
+  max-width: 980px; }
+
 h1 {
   font-size: 3.2rem; }
 
@@ -471,3 +477,45 @@ img {
   width: 100%;
   max-width: 100%;
   height: auto; }
+
+input {
+  border: none;
+  outline: none;
+  font-size: 1.2rem; }
+
+.fb-header {
+  background: #3f5d9a;
+  padding: 1.6em 0 0.7em; }
+  .fb-header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .fb-header__brand {
+    width: 171px;
+    height: 34px;
+    margin-top: 0.3125em; }
+
+.fb-login {
+  display: flex;
+  align-items: flex-end; }
+  .fb-login__item {
+    margin-right: 1.6em; }
+    .fb-login__item__field {
+      padding: 0.3em 0.2em; }
+    .fb-login__item label {
+      display: block;
+      color: #fff;
+      font-size: 1.2rem;
+      padding-bottom: 0.5em; }
+  .fb-login__item:last-child {
+    margin-right: 0; }
+
+.flex-row {
+  display: flex; }
+
+.btn {
+  color: #fff; }
+  .btn--login {
+    font-size: 1.2rem;
+    padding: 0.4em 0.5em;
+    background: #29487d; }

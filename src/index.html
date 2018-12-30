@@ -11,23 +11,27 @@
 
   <header class="fb-header">
     <div class="container">
-      <h1 class="fb-header__brand">Facebook</h1>
-
-      <form class="fb-login">
-        <div class="fb-login__item">
-          <label for="email">Email or Phone</label>
-          <input type="text" id="email">
-        </div>
-
-        <div class="fb-login__item">
-          <label for="password">Password</label>
-          <input type="password" id="password">
-        </div>
-
-        <div class="fb-login__item">
-          <input type="submit" value="Log In">
-        </div>
-      </form>
+      <div class="fb-header__content">
+        <h1 class="fb-header__brand">
+          <a href="#"><img src="dist/img/logo.png" alt=""></a>
+        </h1>
+  
+        <form class="fb-login">
+          <div class="fb-login__item">
+            <label for="email">Email or Phone</label>
+            <input type="text" id="email" class="fb-login__item__field">
+          </div>
+  
+          <div class="fb-login__item">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="fb-login__item__field">
+          </div>
+  
+          <div class="fb-login__item">
+            <input type="submit" value="Log In" class="fb-login__item__submit btn btn--login">
+          </div>
+        </form>
+      </div>
     </div>
   </header>
 

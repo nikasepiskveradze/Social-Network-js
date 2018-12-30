@@ -1,0 +1,27 @@
+.fb-login {
+  display: flex;
+  align-items: flex-end;
+
+  &__item {
+    margin-right: 1.6em;
+
+    &__field {
+      padding: 0.3em 0.2em;
+    }
+
+    &__submit {
+
+    }
+
+    label {
+      display: block;
+      color: $color-white;
+      font-size: $size-12;
+      padding-bottom: 0.5em;
+    }
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+}

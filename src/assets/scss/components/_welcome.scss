@@ -1,0 +1,38 @@
+.fb-welcome {
+  // background: green;
+  width: 565px;
+  margin-right: 1.6em;
+
+  &__title {
+    // padding: 42px 0 24px;
+    // font-size: 24px;
+    padding: 1.75em 0 1em;
+    // font-size: $size-28;
+    font-size: 28px;
+    font-weight: bold;
+    color: $fb-welcome-title;
+    // width: 450px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-top: 1.4em;
+
+    img {
+      width: 56px;
+      height: 56px;
+      margin-right: 1.6em;
+    }
+
+    strong {
+      color: $fb-welcome-title;
+      font-size: $size-17;
+    }
+
+    span {
+      font-size: $size-15;
+      color: $fb-welcome-desc;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.fb-main {
+  background: $fb-main-bg;
+  padding: 2em 0;
+
+  &__content {
+    display: flex;
+  }
+}

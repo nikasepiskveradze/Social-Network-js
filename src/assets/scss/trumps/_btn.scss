@@ -6,4 +6,16 @@
     padding: 0.4em 0.5em;
     background: $login-btn-bg;
   }
+
+  &--sign-up {
+    font-size: $size-19;
+    margin: 0.52em 0;
+    padding: 0.52em 3.26em;
+    background: linear-gradient(#67ae55, #578843);
+    border: 1px solid #3B6E28;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
 }

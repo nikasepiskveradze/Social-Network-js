@@ -518,8 +518,79 @@ input {
   .fb-login__item:last-child {
     margin-right: 0; }
 
+.fb-main {
+  background: #edf0f5;
+  padding: 2em 0; }
+  .fb-main__content {
+    display: flex; }
+
+.fb-welcome {
+  width: 565px;
+  margin-right: 1.6em; }
+  .fb-welcome__title {
+    padding: 1.75em 0 1em;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333; }
+  .fb-welcome__item {
+    display: flex;
+    align-items: center;
+    margin-top: 1.4em; }
+    .fb-welcome__item img {
+      width: 56px;
+      height: 56px;
+      margin-right: 1.6em; }
+    .fb-welcome__item strong {
+      color: #333;
+      font-size: 1.7rem; }
+    .fb-welcome__item span {
+      font-size: 1.5rem;
+      color: #666; }
+
+.fb-registration {
+  width: 400px; }
+  .fb-registration__title {
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.138em; }
+  .fb-registration__subtitle {
+    color: #333;
+    font-size: 1.9rem;
+    margin-bottom: 0.95em; }
+
+.fb-register__item {
+  margin-bottom: 1em; }
+  .fb-register__item input {
+    font-size: 1.8rem;
+    padding: 0.4em 0.5em;
+    border: 1px solid #bdc7d8;
+    border-radius: 5px; }
+  .fb-register__item__birth {
+    font-size: 1.8rem;
+    margin: 1.1em 0 0.27em;
+    display: block; }
+  .fb-register__item__gender {
+    font-size: 1.8rem;
+    padding: 0.27em 0.24em; }
+  .fb-register__item__desc {
+    font-size: 1.1rem;
+    width: 28.72em;
+    margin: 1em 0;
+    color: #666; }
+    .fb-register__item__desc a {
+      font-size: 1.1rem; }
+    .fb-register__item__desc a:hover {
+      text-decoration: underline; }
+
 .flex-row {
   display: flex; }
+
+.mr-10 {
+  margin-right: 10px; }
+
+.full-width {
+  width: 100%; }
 
 .btn {
   color: #fff; }
@@ -527,3 +598,13 @@ input {
     font-size: 1.2rem;
     padding: 0.4em 0.5em;
     background: #29487d; }
+  .btn--sign-up {
+    font-size: 1.9rem;
+    margin: 0.52em 0;
+    padding: 0.52em 3.26em;
+    background: linear-gradient(#67ae55, #578843);
+    border: 1px solid #3B6E28;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer; }

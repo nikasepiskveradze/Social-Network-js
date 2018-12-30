@@ -1,0 +1,39 @@
+.fb-register {
+
+  &__item {
+    margin-bottom: 1em;
+
+    input {
+      font-size: $size-18;
+      padding: 0.4em 0.5em;
+      border: 1px solid #bdc7d8;
+      border-radius: 5px;
+    }
+
+    &__birth {
+      font-size: $size-18;
+      margin: 1.1em 0 0.27em;
+      display: block;
+    }
+
+    &__gender {
+      font-size: $size-18;
+      padding: 0.27em 0.24em;
+    }
+
+    &__desc {
+      font-size: $size-11;
+      width: 28.72em;
+      margin: 1em 0;
+      color: $fb-welcome-desc;
+
+      a {
+        font-size: $size-11;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

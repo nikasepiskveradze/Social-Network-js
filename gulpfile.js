@@ -7,7 +7,7 @@ const webpack = require('webpack');
 gulp.task('sass', function() {
   return gulp.src(['src/assets/scss/**/*.scss'])
     .pipe(sass())
-    .on('error', (error) => {
+    .on('error', function(error) {
       console.log(error.toString());
       this.emit('end');
     })

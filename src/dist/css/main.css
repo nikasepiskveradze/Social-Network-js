@@ -492,18 +492,26 @@ input {
     align-items: center; }
   .fb-header__brand {
     width: 171px;
-    height: 34px;
-    margin-top: 0.3125em; }
+    height: 34px; }
 
 .fb-login {
   display: flex;
-  align-items: flex-end; }
+  align-content: center; }
   .fb-login__item {
-    margin-right: 1.6em; }
+    margin-right: 1.6em;
+    display: flex;
+    flex-direction: column; }
     .fb-login__item__field {
       padding: 0.3em 0.2em; }
+    .fb-login__item__forgot {
+      font-size: 1.2rem;
+      margin-top: 0.5em;
+      color: #83b4d8; }
+    .fb-login__item__forgot:hover {
+      text-decoration: underline; }
+    .fb-login__item__submit {
+      margin-top: 1.5em; }
     .fb-login__item label {
-      display: block;
       color: #fff;
       font-size: 1.2rem;
       padding-bottom: 0.5em; }

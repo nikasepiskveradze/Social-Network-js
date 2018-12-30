@@ -1,20 +1,31 @@
 .fb-login {
   display: flex;
-  align-items: flex-end;
+  align-content: center;
 
   &__item {
     margin-right: 1.6em;
+    display: flex;
+    flex-direction: column;
 
     &__field {
       padding: 0.3em 0.2em;
     }
 
-    &__submit {
+    &__forgot {
+      font-size: $size-12;
+      margin-top: 0.5em;
+      color: $link-color;
+    }
 
+    &__forgot:hover {
+      text-decoration: underline;
+    }
+
+    &__submit {
+      margin-top: 1.5em;
     }
 
     label {
-      display: block;
       color: $color-white;
       font-size: $size-12;
       padding-bottom: 0.5em;

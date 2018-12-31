@@ -16,9 +16,10 @@ body {
 }
 
 .container {
-  max-width: 980px;
+  max-width: $container-size;
 }
 
 .container-fluid {
-  
+  max-width: $container-fluid-size;
+  margin-left: 7em;
 }

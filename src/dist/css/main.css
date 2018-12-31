@@ -442,6 +442,10 @@ body {
 .container {
   max-width: 980px; }
 
+.container-fluid {
+  max-width: 1015px;
+  margin-left: 7em; }
+
 h1 {
   font-size: 3.2rem; }
 

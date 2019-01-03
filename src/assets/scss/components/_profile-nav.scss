@@ -1,0 +1,79 @@
+.fb-profile-nav {
+  display: flex;
+  align-items: center;
+
+  &__item {
+
+    &__info {
+      display: flex;
+      align-items: center;
+      padding: 3px 8px;
+
+      img {
+        width: 24px;
+        height: 24px;
+        border-radius: 12px;
+        margin-right: 8px;
+      }
+    }
+
+    &__info:hover, &__desc:hover {
+      background: rgba($color: $color-black, $alpha: 0.3);
+      border-radius: 2px;
+    }
+
+    &__desc, &__icons {
+      display: block;
+      padding: 8px 12px;
+    }
+
+    &__icons {
+      margin: 0 7px;
+
+      &--people {
+        margin-left: 11px;
+        background: url(../img/icons/main-people.png) no-repeat;
+        background-size: contain;
+        width: 25px;
+        height: 20px;
+      }
+
+      &--messenger {
+        background: url(../img/icons/main-messenger.png) no-repeat;
+        background-size: contain;
+        width: 25px;
+        height: 20px;
+        background-position: center;
+      }
+
+      &--bell {
+        background: url(../img/icons/main-bell.png) no-repeat;
+        background-size: contain;
+        width: 25px;
+        height: 20px;
+        background-position: center;
+      }
+
+      &--question {
+        background: url(../img/icons/main-question.png) no-repeat;
+        background-size: contain;
+        width: 25px;
+        height: 20px;
+        background-position: center;
+      }
+
+      &--arrow {
+        background: url(../img/icons/main-arrow.png) no-repeat;
+        background-position: left;
+        width: 25px;
+        height: 20px;
+      }
+    }
+  }
+
+  a {
+    font-size: $size-13;
+    color: $color-white;
+    font-weight: bold;
+  }
+}

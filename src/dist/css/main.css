@@ -487,6 +487,11 @@ input {
   outline: none;
   font-size: 1.2rem; }
 
+button {
+  border: none;
+  outline: none;
+  font-size: 1.2rem; }
+
 .fb-header {
   background: #3f5d9a;
   padding: 1.6em 0 0.7em; }
@@ -608,8 +613,93 @@ input {
   .fb-footer li {
     margin-right: 1em; }
 
+.fb-pg-header {
+  background: #3f5d9a;
+  padding: 0.8em 0; }
+  .fb-pg-header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .fb-pg-header__content__leftside {
+      align-items: center; }
+      .fb-pg-header__content__leftside__logo {
+        margin-right: 12px;
+        width: 24px;
+        height: 24px; }
+
+.fb-search__find {
+  padding: 5px;
+  width: 400px;
+  font-size: 14px;
+  border-radius: 5px; }
+
+.fb-search__submit {
+  padding: 6px 18px;
+  margin-left: -5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #f5f6f7;
+  color: #4e5665; }
+
+.fb-profile-nav {
+  display: flex;
+  align-items: center; }
+  .fb-profile-nav__item__info {
+    display: flex;
+    align-items: center;
+    padding: 3px 8px; }
+    .fb-profile-nav__item__info img {
+      width: 24px;
+      height: 24px;
+      border-radius: 12px;
+      margin-right: 8px; }
+  .fb-profile-nav__item__info:hover, .fb-profile-nav__item__desc:hover {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 2px; }
+  .fb-profile-nav__item__desc, .fb-profile-nav__item__icons {
+    display: block;
+    padding: 8px 12px; }
+  .fb-profile-nav__item__icons {
+    margin: 0 7px; }
+    .fb-profile-nav__item__icons--people {
+      margin-left: 11px;
+      background: url(../img/icons/main-people.png) no-repeat;
+      background-size: contain;
+      width: 25px;
+      height: 20px; }
+    .fb-profile-nav__item__icons--messenger {
+      background: url(../img/icons/main-messenger.png) no-repeat;
+      background-size: contain;
+      width: 25px;
+      height: 20px;
+      background-position: center; }
+    .fb-profile-nav__item__icons--bell {
+      background: url(../img/icons/main-bell.png) no-repeat;
+      background-size: contain;
+      width: 25px;
+      height: 20px;
+      background-position: center; }
+    .fb-profile-nav__item__icons--question {
+      background: url(../img/icons/main-question.png) no-repeat;
+      background-size: contain;
+      width: 25px;
+      height: 20px;
+      background-position: center; }
+    .fb-profile-nav__item__icons--arrow {
+      background: url(../img/icons/main-arrow.png) no-repeat;
+      background-position: left;
+      width: 25px;
+      height: 20px; }
+  .fb-profile-nav a {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: bold; }
+
 .flex-row {
   display: flex; }
+
+.align-items-center {
+  align-items: center; }
 
 .mr-10 {
   margin-right: 10px; }
@@ -633,3 +723,12 @@ input {
     text-align: center;
     font-weight: bold;
     cursor: pointer; }
+
+.left-line::before {
+  content: '';
+  display: block;
+  height: 18px;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 15px; }

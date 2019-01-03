@@ -1,0 +1,24 @@
+.fb-pg-header {
+  background: $fb-header-bg;
+  padding: 0.8em 0;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__leftside {
+      align-items: center;
+
+      &__logo {
+        margin-right: 12px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &__rightside {
+      
+    }
+  }
+}

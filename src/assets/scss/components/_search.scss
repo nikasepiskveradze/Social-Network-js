@@ -1,0 +1,19 @@
+.fb-search {
+  
+  
+  &__find {
+    padding: 5px;
+    width: 400px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+
+  &__submit {
+    padding: 6px 18px;
+    margin-left: -5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: $search-submit-bg;
+    color: $search-submit-color;
+  }
+}

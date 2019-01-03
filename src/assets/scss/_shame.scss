@@ -1,0 +1,9 @@
+.left-line::before {
+  content: '';
+  display: block;
+  height: 18px;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 15px;
+}

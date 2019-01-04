@@ -1,0 +1,48 @@
+.fb-personal {
+  // background: red;
+  margin-right: 12px;
+  margin-top: 10px;
+
+  &__image {
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+  }
+
+  &__name {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    line-height: 1.3;
+  }
+
+  &__username {
+    font-size: 17px;
+    color: $username-color;
+  }
+
+  &__links {
+    margin-top: 15px;
+
+    li {
+      // background: green;
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: $color-black;
+      font-size: 16px;
+      // background: yellow;
+      display: block;
+      padding: 7px;
+      
+    }
+
+    a:hover, &__active {
+      outline: 1px solid #dddfe2;
+      background: $color-white;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+  }
+}

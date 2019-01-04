@@ -1,0 +1,21 @@
+.fb-pg-main {
+  // background: green;
+
+  &__cover {
+    margin-bottom: 10px;
+  }
+
+  &__content {
+    background: green;
+    display: flex;
+
+    &__first-col {
+      background: blue;
+      margin-right: 10px;
+    }
+
+    &__second-col {
+      background: lightblue;
+    }
+  }
+}

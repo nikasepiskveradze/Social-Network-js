@@ -47,31 +47,63 @@
   <nav class="fb-pg-bar">
     <div class="container-fluid">
       <ul class="fb-pg-bar__content">
-        <li><a href="#">Page</a></li>
-        <li><a href="#">Inbox</a></li>
-        <li><a href="#">Notifications</a></li>
-        <li><a href="#">Insights</a></li>
-        <li><a href="#">Publishing To</a></li>
-        <li><a href="#">Ad Center</a></li>
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">Help</a></li>
+        <div class="fb-pg-bar__content__nav-1 flex-row">
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Inbox</a></li>
+          <li><a href="#">Notifications</a></li>
+          <li><a href="#">Insights</a></li>
+          <li><a href="#">Publishing To</a></li>
+          <li><a href="#">Ad Center</a></li>
+        </div>
+
+        <div class="fb-pg-bar__content__nav-2 flex-row">
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Help</a></li>
+        </div>
       </ul>
     </div>
   </nav>
 
-  <main class="fb-pg-main container-fluid">
-    <div class="fb-personal">
-      Personal Details Goes Here
-    </div>
-
-    <div class="fb-main">
-      <div class="fb-main__cover">
-        Cover Goes Here
+  <main class="bg-color-1">
+    <div class="container-fluid flex-row">
+      <div class="fb-personal">
+        <img class="fb-personal__image" src="dist/img/profile.jpg" alt="">
+  
+        <h2 class="fb-personal__name">Nika Sepiskveradze</h2>
+        <h3 class="fb-personal__username">@sebiskver</h3>
+  
+        <ul class="fb-personal__links">
+          <li><a href="#" class="fb-personal__links__active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Photos</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Posts</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
       </div>
-
-      <div class="fb-main__content">
-        <div class="fb-main__content__first-col"></div>
-        <div class="fb-main__content__second-col"></div>
+  
+      <div class="fb-pg-main">
+        <div class="fb-pg-main__cover">
+          <img src="dist/img/cover.png" alt="">
+        </div>
+  
+        <div class="fb-pg-main__content">
+          <div class="fb-pg-main__content__first-col">
+            <div class="fb-create-post">
+              
+            </div>
+  
+            <div class="fb-post">
+              Actual Post Goes Here
+            </div>
+          </div>
+  
+          <div class="fb-pg-main__content__second-col">
+            Some Random Blocks Goes Here
+          </div>
+        </div>
       </div>
     </div>
   </main>

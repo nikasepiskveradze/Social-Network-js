@@ -2,15 +2,15 @@
   
   
   &__find {
-    padding: 5px;
+    font-size: $size-14;
+    padding: 0.35em;
     width: 400px;
-    font-size: 14px;
     border-radius: 5px;
   }
 
   &__submit {
-    padding: 6px 18px;
-    margin-left: -5px;
+    padding: 0.5em 1.5em;
+    margin-left: -0.41em;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     background: $search-submit-bg;

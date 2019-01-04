@@ -7,13 +7,13 @@
     &__info {
       display: flex;
       align-items: center;
-      padding: 3px 8px;
+      padding: 0.1875em 0.5em;
 
       img {
         width: 24px;
         height: 24px;
         border-radius: 12px;
-        margin-right: 8px;
+        margin-right: 0.8em;
       }
     }
 
@@ -24,14 +24,14 @@
 
     &__desc, &__icons {
       display: block;
-      padding: 8px 12px;
+      padding: 0.5em 0.75em;
     }
 
     &__icons {
-      margin: 0 7px;
+      margin: 0 0.4375em;
 
       &--people {
-        margin-left: 11px;
+        margin-left: 0.6875em;
         background: url(../img/icons/main-people.png) no-repeat;
         background-size: contain;
         width: 25px;

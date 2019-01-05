@@ -18,6 +18,7 @@
 @import "./elements/img";
 @import "./elements/input";
 @import "./elements/button";
+@import "./elements/textarea";
 
 // Components
 @import "./components/wp-header";
@@ -34,6 +35,8 @@
 @import "./components/pg-bar";
 @import "./components/personal";
 @import "./components/pg-main";
+@import "./components/create-post";
+@import "./components/post";
 
 // Utilities
 @import "./trumps/utilities";

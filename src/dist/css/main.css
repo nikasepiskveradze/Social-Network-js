@@ -840,7 +840,7 @@ textarea:focus {
     margin: 0.66em 0;
     line-height: 1.2;
     font-weight: 500;
-    margin-bottom: 0.33em; }
+    margin-bottom: 1em; }
     .fb-post__content p {
       font-size: 1.5rem;
       line-height: 1.2;
@@ -887,6 +887,46 @@ textarea:focus {
       width: 100%;
       height: 150px; }
 
+.fb-contact {
+  position: fixed;
+  width: 220px;
+  height: 100%;
+  background: #E9EBEE;
+  top: 45px;
+  right: 0;
+  border-left: 1px solid #CCCCCC;
+  overflow: auto; }
+  .fb-contact__title {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 1.09em 0.9em; }
+  .fb-contact__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.7em 0;
+    padding: 0 1em;
+    cursor: pointer; }
+    .fb-contact__item__info {
+      display: flex;
+      align-items: center; }
+      .fb-contact__item__info img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%; }
+      .fb-contact__item__info span {
+        font-size: 1.2rem;
+        margin-left: 0.83em; }
+  .fb-contact__search {
+    position: fixed;
+    bottom: 0;
+    width: 100%; }
+    .fb-contact__search input {
+      padding: 0.66em;
+      width: 100%; }
+
 .flex-row {
   display: flex; }
 
@@ -927,3 +967,9 @@ textarea:focus {
 
 .bg-color-1 {
   background: #e9ebee; }
+
+.green-dot {
+  width: 6px;
+  height: 6px;
+  background: #42B72A;
+  border-radius: 3px; }

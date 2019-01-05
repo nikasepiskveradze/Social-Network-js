@@ -11,3 +11,10 @@
 .bg-color-1 {
   background: $fb-profile-main;
 }
+
+.green-dot {
+  width: 6px;
+  height: 6px;
+  background: $dot-color;
+  border-radius: 3px;
+}

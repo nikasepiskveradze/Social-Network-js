@@ -1,0 +1,138 @@
+{
+  "users": [
+    {
+      "name": "Nika",
+      "lastname": "Sepiskveradze",
+      "username": "sebiskver",
+      "email": "sebiskver@gmail.com",
+      "password": "random",
+      "birth": "12/21/1997",
+      "gender": "male",
+      "image": "https://picsum.photos/300/300/?image=1",
+
+      "friends": [
+        {
+          "name": "Mariam",
+          "lastname": "Sarjveladze",
+          "image": "https://picsum.photos/300/300/?image=2",
+          "active": true
+        },
+        {
+          "name": "Natia",
+          "lastname": "Aludaruri",
+          "image": "https://picsum.photos/300/300/?image=3",
+          "active": true
+        },
+        {
+          "name": "Iuri",
+          "lastname": "Sajaia",
+          "image": "https://picsum.photos/300/300/?image=4",
+          "active": true
+        },
+        {
+          "name": "Tornike",
+          "lastname": "Gagadze",
+          "image": "https://picsum.photos/300/300/?image=5",
+          "active": true
+        }
+      ],
+      
+      "posts": [
+        {
+          "id": 1,
+          "body": "გამარჯობა ეს არის ჩემი პირველი პოსტი"
+        }
+      ]
+    },
+
+    {
+      "name": "Natia",
+      "lastname": "Aludauri",
+      "username": "aludauri",
+      "email": "xevsuri@gmail.com",
+      "password": "random",
+      "birth": "12/21/1997",
+      "gender": "female",
+      "image": "https://picsum.photos/300/300/?image=1",
+      
+      "friends": [
+        {
+          "name": "Mariam",
+          "lastname": "Sarjveladze",
+          "image": "https://picsum.photos/300/300/?image=2",
+          "active": true
+        },
+        {
+          "name": "Nika",
+          "lastname": "Sepiskveradze",
+          "image": "https://picsum.photos/300/300/?image=3",
+          "active": true
+        },
+        {
+          "name": "Iuri",
+          "lastname": "Sajaia",
+          "image": "https://picsum.photos/300/300/?image=4",
+          "active": true
+        },
+        {
+          "name": "Tornike",
+          "lastname": "Gagadze",
+          "image": "https://picsum.photos/300/300/?image=5",
+          "active": true
+        }
+      ],
+      
+      "posts": [
+        {
+          "id": 1,
+          "body": "გამარჯობა ეს არის ჩემი პირველი პოსტი"
+        }
+      ]
+    },
+
+    {
+      "name": "Mariam",
+      "lastname": "Sarjveladze",
+      "username": "sarjvela",
+      "email": "sarjve@gmail.com",
+      "password": "random",
+      "birth": "12/21/1997",
+      "gender": "female",
+      "image": "https://picsum.photos/300/300/?image=1",
+      
+      "friends": [
+        {
+          "name": "Nika",
+          "lastname": "Sepiskveradze",
+          "image": "https://picsum.photos/300/300/?image=2",
+          "active": true
+        },
+        {
+          "name": "Natia",
+          "lastname": "Aludaruri",
+          "image": "https://picsum.photos/300/300/?image=3",
+          "active": true
+        },
+        {
+          "name": "Iuri",
+          "lastname": "Sajaia",
+          "image": "https://picsum.photos/300/300/?image=4",
+          "active": true
+        },
+        {
+          "name": "Tornike",
+          "lastname": "Gagadze",
+          "image": "https://picsum.photos/300/300/?image=5",
+          "active": true
+        }
+      ],
+      
+      "posts": [
+        {
+          "id": 1,
+          "body": "გამარჯობა ეს არის ჩემი პირველი პოსტი"
+        }
+      ]
+    }
+  ]
+}

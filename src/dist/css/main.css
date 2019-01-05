@@ -631,7 +631,10 @@ textarea:focus {
 
 .fb-pg-header {
   background: #3f5d9a;
-  padding: 0.8em 0; }
+  padding: 0.8em 0;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
   .fb-pg-header__content {
     display: flex;
     justify-content: space-between;
@@ -712,7 +715,9 @@ textarea:focus {
     font-weight: bold; }
 
 .fb-pg-bar {
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); }
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: -4px; }
   .fb-pg-bar__content {
     display: flex;
     justify-content: space-between; }

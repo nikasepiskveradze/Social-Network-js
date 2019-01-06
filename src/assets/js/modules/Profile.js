@@ -21,6 +21,7 @@ class Profile {
     this.profileNavItemRender();
     this.profilePersonalRender();
 
+
     });
   }
 

@@ -58,4 +58,6 @@ class EasyHTTP {
   }
 }
 
-export default EasyHTTP;
+const http = new EasyHTTP;
+
+export default http;

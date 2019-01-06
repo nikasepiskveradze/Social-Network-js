@@ -1,6 +1,7 @@
 {
   "users": [
     {
+      "id": 1,
       "name": "Nika",
       "lastname": "Sepiskveradze",
       "username": "sebiskver",
@@ -46,6 +47,7 @@
     },
 
     {
+      "id": 2,
       "name": "Natia",
       "lastname": "Aludauri",
       "username": "aludauri",
@@ -53,7 +55,7 @@
       "password": "random",
       "birth": "12/21/1997",
       "gender": "female",
-      "image": "https://picsum.photos/300/300/?image=1",
+      "image": "https://picsum.photos/300/300/?image=2",
       
       "friends": [
         {
@@ -91,6 +93,7 @@
     },
 
     {
+      "id": 3,
       "name": "Mariam",
       "lastname": "Sarjveladze",
       "username": "sarjvela",
@@ -98,7 +101,7 @@
       "password": "random",
       "birth": "12/21/1997",
       "gender": "female",
-      "image": "https://picsum.photos/300/300/?image=1",
+      "image": "https://picsum.photos/300/300/?image=3",
       
       "friends": [
         {

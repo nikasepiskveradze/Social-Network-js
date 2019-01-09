@@ -1,11 +1,14 @@
 .fb-post {
   // background: green;
-  margin-bottom: 1em;
-  padding: 1em;
-  border: 1px solid $post-border-color;
-  border-radius: 5px;
-  background: $color-white;
-  width: 500px;
+
+  &__item {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid $post-border-color;
+    border-radius: 5px;
+    background: $color-white;
+    width: 500px;
+  }
 
   &__header {
     display: flex;

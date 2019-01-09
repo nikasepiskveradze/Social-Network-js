@@ -1,71 +1,57 @@
 import http from '../lib/EasyHTTP';
+import ui from '../modules/UI';
 
 class Profile {
   constructor() {
-    this.profileNav = '.fb-profile-nav';
-    this.profilePersonal = '.fb-personal';
+    // this.profileNav = '.fb-profile-nav';
+    // this.profilePersonal = '.fb-personal';
+    // this.profilePost = '.fb-post';
+    // this.profileContact = '.fb-contact';
 
-    this.user = '';
+    this.text = '#text';
+    this.publish = '#publish';
 
-    this.getInformationFromAPI();
+    this.user = JSON.parse(localStorage.getItem('userLogged'));
+
+    this.loadEvents();
+
+    this.getPosts();
   }
 
-  getInformationFromAPI() {
-    const userId = JSON.parse(localStorage.getItem('userLogged'));
 
-    http.get(`http://localhost:3000/users/${userId}`, (error, data) => {
-      this.user = JSON.parse(data);
-      console.log(this.user);
+  loadEvents() {
+    document.querySelector(this.publish).addEventListener('click', this.addPost.bind(this));
+  }
 
-      // Render Elements
-    this.profileNavItemRender();
-    this.profilePersonalRender();
-
+  getPosts() {
+    http.get(`http://localhost:3000/users/${this.user}`, (error, data) => {
+      ui.profilePostRender(JSON.parse(data));
     });
   }
 
-  profileNavItemRender() {
-    const nav = document.querySelector(this.profileNav);
+  addPost() {
+    let txt = document.querySelector(this.text).value;
 
-    const li = document.createElement('li');
-    li.className = 'fb-profile-nav__item';
-
-    const a = document.createElement('a');
-    a.setAttribute('href', '#');
-    a.className = 'fb-profile-nav__item__info';
-
-    const img = document.createElement('img');
-    img.src = this.user.image;
-
-    const span = document.createElement('span');
-    span.textContent = this.user.name;
-
-    a.appendChild(img);
-    a.appendChild(span);
-
-    li.appendChild(a);
-
-    nav.insertBefore(li, nav.firstElementChild);
-  }
-
-  profilePersonalRender() {
-    const personal = document.querySelector(this.profilePersonal);
+    const information = {
+      body: txt
+    }
     
-    const img = document.createElement('img');
-    img.src = this.user.image;
-    img.className = 'fb-personal__image';
-    
-    const h2 = document.createElement('h2');
-    h2.className = 'fb-personal__name';
-    h2.textContent = `${this.user.name} ${this.user.lastname}`;
+    // http.put(`http://localhost:3000/users/${this.user}`,)
+    http.get(`http://localhost:3000/users/${this.user}`, (error, data) => {
+      let dataToArray = JSON.parse(data);
 
-    const h3 = document.createElement('h3');
-    h3.className = 'fb-personal__username';
-    h3.textContent = `@${this.user.username}`;
+      dataToArray.posts.push(information);
 
-    personal.insertBefore(h3, personal.firstElementChild);
-    personal.insertBefore(h2, personal.firstElementChild);
-    personal.insertBefore(img, personal.firstElementChild);
+      // console.log(dataToArray.posts);
+
+      http.put(`http://localhost:3000/users/${this.user}`, dataToArray, (error, data) => {
+        console.log('Modified');
+        ui.profilePostRender(dataToArray);
+      });
+
+    });
+
+    console.log(txt);
   }
 }
 

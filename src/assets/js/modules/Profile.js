@@ -35,7 +35,7 @@ class Profile {
       ui.profilePostRender(newPost);
     });
   }
-
+  
   addPost() {
     let txt = document.querySelector(this.text).value;
 

@@ -5,6 +5,8 @@ class UI {
     this.profilePersonal = '.fb-personal';
     this.profilePost = '.fb-post';
     this.profileContact = '.fb-contact';
+
+    this.text = '#text';
   }
 
   profilePostRender(user) {
@@ -15,7 +17,7 @@ class UI {
     let lastname = user.lastname;
     let image = user.image;
 
-    user.posts.forEach((post) => {
+    user.posts.reverse().forEach((post) => {
       output += `
         <div class="fb-post__item">
           <div class="fb-post__header">
@@ -41,6 +43,11 @@ class UI {
     });
 
     pts.innerHTML = output;
+    this.clearTextArea();
+  }
+
+  clearTextArea() {
+    document.querySelector(this.text).value = '';
   }
 
 }

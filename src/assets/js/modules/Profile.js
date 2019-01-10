@@ -14,19 +14,40 @@ class Profile {
     this.user = JSON.parse(localStorage.getItem('userLogged'));
 
     this.loadEvents();
-
-    this.getPosts();
   }
 
 
   loadEvents() {
+    // document.addEventListener('DOMContentLoaded', () => {
+    //   this.getPosts();
+    // });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      this.getPosts((data) => {
+        ui.profilePostRender(JSON.parse(data));
+      });
+    });
+
     document.querySelector(this.publish).addEventListener('click', this.addPost.bind(this));
   }
 
-  getPosts() {
+  // getPosts() {
+  //   http.get(`http://localhost:3000/users/${this.user}`, (error, data) => {
+  //     ui.profilePostRender(JSON.parse(data));
+  //   });
+  // }
+
+  getPosts(use) {
     http.get(`http://localhost:3000/users/${this.user}`, (error, data) => {
-      ui.profilePostRender(JSON.parse(data));
+      use(data);
     });
+  }
+
+  putPosts(newPost) {
+    http.put(`http://localhost:3000/users/${this.user}`, newPost, (error, data) => {
+      console.log('Modified');
+      ui.profilePostRender(newPost);
+    })
   }
 
   addPost() {
@@ -36,18 +57,17 @@ class Profile {
       body: txt
     }
     
-    // http.put(`http://localhost:3000/users/${this.user}`,)
     http.get(`http://localhost:3000/users/${this.user}`, (error, data) => {
-      let dataToArray = JSON.parse(data);
+      let user = JSON.parse(data);
 
-      dataToArray.posts.push(information);
+      user.posts.push(information);
 
-      // console.log(dataToArray.posts);
+      this.putPosts(user);
 
-      http.put(`http://localhost:3000/users/${this.user}`, dataToArray, (error, data) => {
-        console.log('Modified');
-        ui.profilePostRender(dataToArray);
-      });
+      // http.put(`http://localhost:3000/users/${this.user}`, dataToArray, (error, data) => {
+      //   console.log('Modified');
+      //   ui.profilePostRender(dataToArray);
+      // });
 
     });
 

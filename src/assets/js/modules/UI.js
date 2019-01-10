@@ -73,12 +73,16 @@ class UI {
 
             <div class="fb-post__header__info">
               <p class="fb-post__header__info__name"><a href="#">${name} ${lastname}</a></p>
-              <p class="fb-post__header__info__date">September 17 At 9:01 AM</p>
+              <p class="fb-post__header__info__date">${post.date}</p>
             </div>
           </div>
 
           <div class="fb-post__content">
             <p>${post.body}</p>
+          </div>
+
+          <div class="fb-post__photo">
+            <a href="#"><img src="${post.image}" alt="Post Photo"></a>
           </div>
 
           <div class="fb-post__footer">

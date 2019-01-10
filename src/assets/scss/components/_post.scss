@@ -48,14 +48,18 @@
       line-height: 1.2;
       font-weight: 500;
       margin-bottom: 0.33em;
+      white-space: pre-wrap;
     }
   }
 
+  &__photo {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+
   &__footer {
-    // background: green;
     display: flex;
     justify-content: space-around;
-    border-top: 1px solid $post-border-color;
 
     .fa {
       font-size: $size-18;

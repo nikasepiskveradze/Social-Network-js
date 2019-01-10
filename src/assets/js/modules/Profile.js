@@ -1,5 +1,6 @@
 import http from '../lib/EasyHTTP';
-import ui from '../modules/UI';
+import ui from './UI';
+import util from './Utilities';
 
 class Profile {
   constructor() {
@@ -44,7 +45,12 @@ class Profile {
       return;
     }
 
+    const dte = util.getPostDate();
+    const img = util.getRandomImage();
+
     const information = {
+      date: dte,
+      image: img,
       body: txt
     }
 

@@ -1,4 +1,4 @@
 node_modules/
 .vscode/
 PSD/
-package-lock.json/
+package-lock.json

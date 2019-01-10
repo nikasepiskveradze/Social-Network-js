@@ -6,23 +6,27 @@ class Profile {
     this.text = '#text';
     this.publish = '#publish';
     this.user = JSON.parse(localStorage.getItem('userLogged'));
-    
+
     this.loadEvents();
   }
 
   loadEvents() {
     document.addEventListener('DOMContentLoaded', () => {
-      this.getPosts((data) => {
-        ui.profilePostRender(JSON.parse(data));
+      this.getUser((userData) => {
+        ui.profileNavRender(userData);
+        ui.profilePersonalRender(userData);
+        ui.profileContactRender(userData);
+
+        ui.profilePostRender(userData);
       });
     });
 
     document.querySelector(this.publish).addEventListener('click', this.addPost.bind(this));
   }
 
-  getPosts(use) {
+  getUser(user) {
     http.get(`http://localhost:3000/users/${this.user}`, (error, data) => {
-      use(data);
+      user(JSON.parse(data));
     });
   }
 
@@ -44,12 +48,9 @@ class Profile {
       body: txt
     }
 
-    this.getPosts((data) => {
-      let user = JSON.parse(data);
-
-      user.posts.push(information);
-
-      this.putPosts(user);
+    this.getUser((data) => {
+      data.posts.push(information);
+      this.putPosts(data);
     });
   }
 }

@@ -21,7 +21,7 @@
           "name": "Natia",
           "lastname": "Aludaruri",
           "image": "https://picsum.photos/300/300/?image=3",
-          "active": true
+          "active": false
         },
         {
           "name": "Iuri",
@@ -33,7 +33,7 @@
           "name": "Tornike",
           "lastname": "Gagadze",
           "image": "https://picsum.photos/300/300/?image=5",
-          "active": true
+          "active": false
         }
       ],
       "posts": [

@@ -26,9 +26,8 @@ class Login {
     let user = JSON.parse(data).find((u) => email === u.email && password === u.password);
 
     if(!user){
-      console.log('User Not Found');
+      alert('Wrong Email Or Password');
     }else {
-      // console.log(user);
       window.location.href = 'http://localhost:3001/profile.html';
       localStorage.setItem('userLogged', JSON.stringify(user.id));
     }

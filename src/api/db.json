@@ -10,6 +10,7 @@
       "birth": "12/21/1997",
       "gender": "male",
       "image": "https://picsum.photos/300/300/?image=1",
+      "cover": "https://picsum.photos/820/306/?image=2",
       "friends": [
         {
           "name": "Mariam",
@@ -64,6 +65,7 @@
       "birth": "12/21/1997",
       "gender": "female",
       "image": "https://picsum.photos/300/300/?image=2",
+      "cover": "https://picsum.photos/820/306/?image=3",
       "friends": [
         {
           "name": "Mariam",
@@ -102,6 +104,7 @@
       "birth": "12/21/1997",
       "gender": "female",
       "image": "https://picsum.photos/300/300/?image=3",
+      "cover": "https://picsum.photos/820/306/?image=4",
       "friends": [
         {
           "name": "Nika",

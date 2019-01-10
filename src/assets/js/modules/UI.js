@@ -2,6 +2,7 @@ class UI {
   constructor() {
     this.profileNav = '.fb-profile-nav';
     this.profilePersonal = '.fb-personal';
+    this.profileCover = '.fb-pg-main__cover';
     this.profileContact = '.fb-contact';
     this.profilePost = '.fb-post';
 
@@ -33,6 +34,13 @@ class UI {
     `;
 
     person.innerHTML = output + person.innerHTML;
+  }
+
+  profileCoverRender(user) {
+    const cover = document.querySelector(this.profileCover);
+    let output = `<a href="#"><img src="${user.cover}" alt="Cover"></a>`;
+
+    cover.innerHTML = output;
   }
 
   profileContactRender(user) {

@@ -16,6 +16,7 @@ class Profile {
       this.getUser((userData) => {
         ui.profileNavRender(userData);
         ui.profilePersonalRender(userData);
+        ui.profileCoverRender(userData);
         ui.profileContactRender(userData);
 
         ui.profilePostRender(userData);

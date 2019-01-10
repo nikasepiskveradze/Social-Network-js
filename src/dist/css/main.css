@@ -847,12 +847,16 @@ textarea:focus {
     font-size: 1.5rem;
     line-height: 1.2;
     font-weight: 500;
-    margin-bottom: 0.33em; }
+    margin-bottom: 0.33em;
+    white-space: pre-wrap; }
+
+.fb-post__photo {
+  margin-left: -1em;
+  margin-right: -1em; }
 
 .fb-post__footer {
   display: flex;
-  justify-content: space-around;
-  border-top: 1px solid #dddfe2; }
+  justify-content: space-around; }
   .fb-post__footer .fa {
     font-size: 1.8rem;
     margin-right: 0.38em; }

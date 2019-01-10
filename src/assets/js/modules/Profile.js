@@ -1,12 +1,13 @@
 import http from '../lib/EasyHTTP';
-import ui from '../modules/UI';
+import ui from './UI';
+import util from './Utilities';
 
 class Profile {
   constructor() {
     this.text = '#text';
     this.publish = '#publish';
     this.user = JSON.parse(localStorage.getItem('userLogged'));
-
+    
     this.loadEvents();
   }
 
@@ -15,6 +16,7 @@ class Profile {
       this.getUser((userData) => {
         ui.profileNavRender(userData);
         ui.profilePersonalRender(userData);
+        ui.profileCoverRender(userData);
         ui.profileContactRender(userData);
 
         ui.profilePostRender(userData);
@@ -44,7 +46,12 @@ class Profile {
       return;
     }
 
+    const dte = util.getPostDate();
+    const img = util.getRandomImage();
+
     const information = {
+      date: dte,
+      image: img,
       body: txt
     }
 

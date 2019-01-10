@@ -7,7 +7,7 @@ class Profile {
     this.text = '#text';
     this.publish = '#publish';
     this.user = JSON.parse(localStorage.getItem('userLogged'));
-
+    
     this.loadEvents();
   }
 

@@ -18,7 +18,7 @@ class Utilities {
   }
 
   getRandomImage() {
-    const rand = Math.trunc(Math.random()*1000 + 1);
+    const rand = Math.trunc(Math.random()*100 + 1);
     const link = `https://picsum.photos/500/300?image=${rand}`;
 
     return link;

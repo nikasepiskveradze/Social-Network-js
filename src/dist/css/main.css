@@ -511,45 +511,6 @@ textarea:focus {
   font-size: 1.4rem;
   padding: 0.5em; }
 
-.modal {
-  position: fixed;
-  top: calc(50% - 150px);
-  left: calc(50% - 222px);
-  width: 445px;
-  z-index: 10;
-  border: 10px solid rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-  visibility: hidden;
-  opacity: 0;
-  transform: scale(1.2);
-  transition: all 0.3s ease-out; }
-  .modal--show {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1); }
-  .modal-header {
-    background: #3f5d9a;
-    padding: 7px 14px;
-    color: #fff; }
-    .modal-header-title {
-      font-size: 1.5rem; }
-  .modal-content {
-    padding: 15px 14px;
-    background: #fff; }
-    .modal-content-desc {
-      font-size: 1.3rem;
-      line-height: 1.3; }
-  .modal-footer {
-    padding: 7px 14px;
-    background: #F2F2F2;
-    border-top: 2px solid #FCFCFC;
-    display: flex;
-    justify-content: flex-end; }
-    .modal-footer-close {
-      background: #3f5d9a;
-      padding: 6px 12px;
-      color: #fff; }
-
 .fb-header {
   background: #3f5d9a;
   padding: 1.6em 0 0.7em; }

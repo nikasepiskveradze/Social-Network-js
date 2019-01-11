@@ -3,3 +3,7 @@ button {
   outline: none;
   font-size: $size-12;
 }
+
+button:focus {
+  outline: none;
+}

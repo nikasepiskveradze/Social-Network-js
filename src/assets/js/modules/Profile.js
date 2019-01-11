@@ -1,6 +1,7 @@
 import http from '../lib/EasyHTTP';
 import ui from './UI';
 import util from './Utilities';
+import modal from './Modal';
 
 class Profile {
   constructor() {
@@ -42,23 +43,22 @@ class Profile {
     let txt = document.querySelector(this.text).value;
 
     if(txt === '') {
-      alert('Please Fill Field');
-      return;
+      modal.openModal('Fill In Text', 'If you want to post, you must first fill with some words...');
+    }else {
+      const dte = util.getPostDate();
+      const img = util.getRandomImage();
+  
+      const information = {
+        date: dte,
+        image: img,
+        body: txt
+      }
+  
+      this.getUser((data) => {
+        data.posts.push(information);
+        this.putPosts(data);
+      });
     }
-
-    const dte = util.getPostDate();
-    const img = util.getRandomImage();
-
-    const information = {
-      date: dte,
-      image: img,
-      body: txt
-    }
-
-    this.getUser((data) => {
-      data.posts.push(information);
-      this.putPosts(data);
-    });
   }
 }
 

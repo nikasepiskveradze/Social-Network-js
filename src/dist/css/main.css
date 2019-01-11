@@ -935,6 +935,76 @@ textarea:focus {
       padding: 0.66em;
       width: 100%; }
 
+.fb-chat {
+  width: 285px;
+  height: 350px;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 250px;
+  background: white;
+  border-radius: 8px; }
+  .fb-chat__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    border-bottom: 1px solid #E5E5E5;
+    border-radius: 8px 8px 0 0; }
+    .fb-chat__header img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-left: 8px;
+      margin-top: 2px;
+      display: inline-block; }
+    .fb-chat__header__user-info {
+      width: 50%; }
+      .fb-chat__header__user-info__details {
+        display: inline-block; }
+        .fb-chat__header__user-info__details .user-link {
+          color: #000;
+          font-size: 14px;
+          line-height: 20px; }
+    .fb-chat__header__options {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end; }
+      .fb-chat__header__options i {
+        font-size: 14px;
+        margin: 9px;
+        color: #0084FF; }
+  .fb-chat__header:hover {
+    background: #E5E5E5; }
+  .fb-chat__content {
+    width: 100%;
+    height: 245px;
+    border-bottom: 1px solid #E5E5E5; }
+  .fb-chat__bottom {
+    width: 100%;
+    height: 60px;
+    padding: 10px; }
+    .fb-chat__bottom__input__field {
+      width: 100%;
+      height: 30px;
+      color: #000;
+      font-weight: 500; }
+    .fb-chat__bottom__options {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      .fb-chat__bottom__options i {
+        font-size: 16px;
+        margin: 5px;
+        color: #8D949E;
+        cursor: pointer; }
+      .fb-chat__bottom__options i:hover {
+        color: lightgray; }
+      .fb-chat__bottom__options__right i {
+        color: #0084FF; }
+
 .flex-row {
   display: flex; }
 

@@ -547,7 +547,7 @@ textarea:focus {
     justify-content: flex-end; }
     .modal-footer-close {
       background: #3f5d9a;
-      padding: 0.6em 1.2em;
+      padding: 0.5em 1em;
       color: #fff; }
 
 .fb-header {

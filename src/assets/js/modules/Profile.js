@@ -46,7 +46,7 @@ class Profile {
       modal.openModal('Fill In Text', 'If you want to post, you must first fill with some words...');
     }else {
       const dte = util.getPostDate();
-      const img = util.getRandomImage();
+      const img = util.getRandomImage(500, 300);
   
       const information = {
         date: dte,

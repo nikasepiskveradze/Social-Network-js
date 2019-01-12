@@ -17,9 +17,9 @@ class Utilities {
     return months[month];
   }
 
-  getRandomImage() {
+  getRandomImage(width, height) {
     const rand = Math.trunc(Math.random()*100 + 1);
-    const link = `https://picsum.photos/500/300?image=${rand}`;
+    const link = `https://picsum.photos/${width}/${height}?image=${rand}`;
 
     return link;
   }

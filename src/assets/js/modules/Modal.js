@@ -38,7 +38,14 @@ class Modal {
     modal.innerHTML = output;
     modal.classList.add('modal--show');
 
+    this.closeAfterTime();
     this.loadEvents();
+  }
+
+  closeAfterTime() {
+    setTimeout(() => {
+      this.closeModal();
+    }, 5000);
   }
 
   closeModal() {

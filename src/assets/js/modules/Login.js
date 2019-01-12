@@ -27,7 +27,6 @@ class Login {
     let user = JSON.parse(data).find((u) => email === u.email && password === u.password);
 
     if(!user){
-      // alert('Wrong Email Or Password');
       modal.openModal('Wrong Password Or Email', 'Please Try Again, You may have an CAPS LOCK issue or check your email and password if you typed correctly.');
     }else {
       window.location.href = 'http://localhost:3001/profile.html';

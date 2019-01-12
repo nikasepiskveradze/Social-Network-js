@@ -62,28 +62,28 @@
   
           <form class="fb-register">
             <div class="fb-register__item flex-row">
-              <input type="text" placeholder="First name" class="half-width mr-10">
-              <input type="text" placeholder="Last name" class="half-width">
+              <input type="text" id="reg-name" placeholder="First name" class="half-width mr-10">
+              <input type="text" id="reg-lastname" placeholder="Last name" class="half-width">
             </div>
   
             <div class="fb-register__item">
-              <input type="email" placeholder="Mobile number or email" class="full-width">
+              <input type="email" id="reg-email" placeholder="Mobile number or email" class="full-width">
             </div>
   
             <div class="fb-register__item">
-              <input type="password" placeholder="New password" class="full-width">
+              <input type="password" id="reg-password" placeholder="New password" class="full-width">
             </div>
   
             <div class="fb-register__item">
               <label for="birth" class="fb-register__item__birth">Birthday</label>
-              <input type="date" class="full-width">
+              <input type="date" id="reg-birth" class="full-width">
             </div>
   
             <div class="fb-register__item fb-register__item--gender">
-              <input type="radio" value="female" id="female">
+              <input type="radio" name="gender" value="female" id="female">
               <label for="female" class="fb-register__item__gender"> Female</label>
   
-              <input type="radio" value="male" id="male">
+              <input type="radio" name="gender" value="male" id="male">
               <label for="male" class="fb-register__item__gender"> Male</label>
             </div>
   
@@ -92,7 +92,7 @@
             </div>
   
             <div class="fb-register__item">
-              <button type="submit" class="btn btn--sign-up">Sign Up</button>
+              <button type="submit" id="sign-up" class="btn btn--sign-up">Sign Up</button>
             </div>
           </form>
         </div>

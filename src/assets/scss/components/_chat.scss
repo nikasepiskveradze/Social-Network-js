@@ -1,57 +1,54 @@
 .fb-chat {
     width: 285px;
     height: 350px;
-    display: block;
     position: fixed;
-    bottom: 0;
+    bottom: -5px;
     right: 250px;
-    background: white;
+    background: $color-white;
     border-radius: 8px;
+    // display: none;
 
     &__header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // width: 100%;
-        // background: green;
-        height: 40px;
-        cursor: pointer;
         border-bottom: 1px solid #E5E5E5;
         border-radius: 8px 8px 0 0;
+        padding: 0.6em;
 
-        img {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            margin-left: 8px;
-            margin-top: 2px;
-            display: inline-block;
+        &__user {
+            display: flex;
+            align-items: center;
 
-        }
+            &__image {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
 
-        &__user-info {
-            width: 50%;
             &__details {
-                display: inline-block;
+                padding-left: 0.5em;
+                &__link {
+                    color: $color-black;
+                    font-size: $size-14;
+                    display: block;
+                }
 
-                .user-link {
-                    color: #000;
-                    font-size: 14px;
-                    line-height: 20px;
+                &__active {
+                    line-height: 1.2;
                 }
             }
         }
 
         &__options {
-            width: 50%;
             display: flex;
-            justify-content: flex-end;
-            i{
-                font-size: 14px;
-                margin: 9px;
-                color: #0084FF;
-                
-            }
+
+            i {
+                font-size: $size-14;
+                margin-left: 0.71em;
+                padding: 0.142em;
+                color: $fb-chat-icon-color;
+            }                         
         }
         
     }
@@ -61,34 +58,36 @@
     }
 
     &__content {
-        // width: 100%;
-        // background: green;
         height: 245px;
         border-bottom: 1px solid #E5E5E5;
     }
 
     &__bottom {
-        // width: 100%;
-        height: 60px;
-        padding: 10px;
-        // background: green;
 
         &__input {
+            margin-bottom: 0.2em;
+
             &__field{
                 width: 100%;
-                height: 30px;
-                color: #000;
+                padding: 0.83em;
+                color: $color-black;
                 font-weight: 500;
             }
         }
 
         &__options {
-            width: 100%;
             display: flex;
             justify-content: space-between;
+            padding: 0 1em;
+
+            &__left {
+                display: flex;
+            }
+
             i{
-                font-size: 16px;
-                margin: 5px;
+                display: block;
+                font-size: $size-16;
+                padding: 0px 0.625em 0 0;
                 color: #8D949E; 
                 cursor: pointer;
             }
@@ -99,7 +98,7 @@
 
             &__right {
                 i{
-                    color:#0084FF;
+                    color:$fb-chat-icon-color;
                 }
             }
         }

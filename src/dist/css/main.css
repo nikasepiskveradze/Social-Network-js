@@ -1018,7 +1018,19 @@ textarea:focus {
     background: #E5E5E5; }
   .fb-chat__content {
     height: 245px;
-    border-bottom: 1px solid #E5E5E5; }
+    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end; }
+    .fb-chat__content__message {
+      font-size: 1.3rem;
+      background: #0084FF;
+      color: #fff;
+      margin: 0 0.76em 0.61em 2em;
+      padding: 0.53em;
+      border-radius: 12px;
+      line-height: 1.2; }
   .fb-chat__bottom__input {
     margin-bottom: 0.2em; }
     .fb-chat__bottom__input__field {
@@ -1041,7 +1053,8 @@ textarea:focus {
     .fb-chat__bottom__options i:hover {
       color: lightgray; }
     .fb-chat__bottom__options__right i {
-      color: #0084FF; }
+      color: #0084FF;
+      padding-right: 0; }
 
 .flex-row {
   display: flex; }

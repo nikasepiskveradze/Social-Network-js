@@ -5,6 +5,7 @@ class UI {
     this.profileCover = '.fb-pg-main__cover';
     this.profileContact = '.fb-contact';
     this.profilePost = '.fb-post';
+    this.chat = '.fb-chat-show';
 
     this.text = '#text';
   }
@@ -106,8 +107,57 @@ class UI {
     this.clearTextArea();
   }
 
+  profileChatRender(image, name) {
+    document.querySelector(this.chat).innerHTML = `
+      <div class="fb-chat">
+        <div class="fb-chat__header">
+          <div class="fb-chat__header__user">
+            <img class="fb-chat__header__user__image" src="${image}" alt="">
+            <div class="fb-chat__header__user__details">
+              <a href="#" class="fb-chat__header__user__details__link">${name}</a>
+              <span class="fb-chat__header__user__details__active">Active now</span>
+            </div>
+          </div>
+
+          <div class="fb-chat__header__options">
+            <a href="#"><i class="fa fa-phone"></i></a>
+            <a href="#"><i class="fa fa-video-camera"></i></a>
+            <a href="#" id="fb-chat-close"><i class="fa fa-times"></i></a>
+          </div>
+        </div>
+
+        <div class="fb-chat__content">
+          <p class="fb-chat__content__message">Hello ${name}</p>
+        </div>
+
+        <div class="fb-chat__bottom">
+          <div class="fb-chat__bottom__input">
+            <input class="fb-chat__bottom__input__field" type="text" placeholder="Type a message">
+          </div>
+
+          <div class="fb-chat__bottom__options">
+            <div class="fb-chat__bottom__options__left">
+              <i class="fa fa-file-image-o"></i>
+              <i class="fa fa-video-camera"></i>
+              <i class="fa fa-paperclip"></i>
+              <i class="fa fa-gift"></i>
+              <i class="fa fa-smile-o"></i>
+              <i class="fa fa-gamepad"></i>
+            </div>
+            <div class="fb-chat__bottom__options__right">
+              <i class="fa fa-thumbs-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>`;
+  }
+
   clearTextArea() {
     document.querySelector(this.text).value = '';
+  }
+
+  closeChat() {
+    document.querySelector(this.chat).innerHTML = '';
   }
 }
 

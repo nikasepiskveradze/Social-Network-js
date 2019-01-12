@@ -2,11 +2,14 @@ import http from '../lib/EasyHTTP';
 import ui from './UI';
 import util from './Utilities';
 import modal from './Modal';
+import chat from './Chat';
 
 class Profile {
   constructor() {
     this.text = '#text';
     this.publish = '#publish';
+    this.contacts = '#contacts';
+    this.chat = '.fb-chat-show';
     this.user = JSON.parse(localStorage.getItem('userLogged'));
     
     this.loadEvents();
@@ -25,6 +28,10 @@ class Profile {
     });
 
     document.querySelector(this.publish).addEventListener('click', this.addPost.bind(this));
+
+    // Chat Events
+    document.querySelector(this.contacts).addEventListener('click', chat.showChat);
+    document.querySelector(this.chat).addEventListener('click', chat.closeChat);
   }
 
   getUser(user) {

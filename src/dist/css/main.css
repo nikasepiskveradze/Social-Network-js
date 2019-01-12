@@ -984,7 +984,8 @@ textarea:focus {
   bottom: -5px;
   right: 250px;
   background: #fff;
-  border-radius: 8px; }
+  border-radius: 8px;
+  margin-left: 30px; }
   .fb-chat__header {
     display: flex;
     align-items: center;
@@ -1006,7 +1007,7 @@ textarea:focus {
           font-size: 1.4rem;
           display: block; }
         .fb-chat__header__user__details__active {
-          line-height: 1.2; }
+          line-height: 1.5; }
     .fb-chat__header__options {
       display: flex; }
       .fb-chat__header__options i {

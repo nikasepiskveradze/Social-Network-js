@@ -1,3 +1,4 @@
+const hash = require('object-hash');
 import util from './Utilities';
 
 class User {
@@ -6,7 +7,7 @@ class User {
     this.lastname = document.querySelector(lastname).value;
     this.username = this.lastname.toLowerCase();
     this.email = document.querySelector(email).value;
-    this.password = document.querySelector(password).value;
+    this.password = hash(document.querySelector(password).value);
     this.birth = document.querySelector(birth).value;
 
     this.gender = document.querySelector(male).checked ? document.querySelector(male).value : document.querySelector(female).checked ? document.querySelector(female).value : '';
@@ -34,8 +35,8 @@ class User {
         active: true
       },
       {
-        name: 'Mariam',
-        lastname: 'Sarjveladze',
+        name: 'Nika',
+        lastname: 'Sepiskveradze',
         image: util.getRandomImage(300,300),
         active: true
       },

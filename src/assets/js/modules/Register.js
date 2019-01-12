@@ -14,6 +14,7 @@ class Register {
 
     this.signUp = '#sign-up';
 
+    // Events
     document.querySelector(this.signUp).addEventListener('click', this.register.bind(this));
   }
 
@@ -33,7 +34,7 @@ class Register {
 
   submitRegistration(send) {
     http.post(`http://localhost:3000/users`, send, (error, data) => {
-      modal.openModal('Registration Completed!', `Congratilations you succesfully register our site`);
+      modal.openModal('Registration Completed!', `Congratilations you succesfully register to our site`);
     });
   }
 }

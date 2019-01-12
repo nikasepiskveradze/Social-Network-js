@@ -1,3 +1,4 @@
+const hash = require('object-hash');
 import http from "../lib/EasyHTTP";
 import modal from './Modal';
 
@@ -22,7 +23,7 @@ class Login {
 
   submitLogIn(error, data) {
     const email = document.querySelector(this.email).value;
-    const password = document.querySelector(this.password).value;
+    const password = hash(document.querySelector(this.password).value);
 
     let user = JSON.parse(data).find((u) => email === u.email && password === u.password);
 

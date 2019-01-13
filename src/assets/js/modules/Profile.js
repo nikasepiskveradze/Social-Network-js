@@ -43,9 +43,8 @@ class Profile {
 
     // Options
     document.querySelector(this.options).addEventListener('click', (e) => {
-      console.log('click');
-      document.querySelector(this.profileOptions).classList.toggle('fb-options--show');
-
+      console.log(e.target);
+      
       e.preventDefault();
     });
     

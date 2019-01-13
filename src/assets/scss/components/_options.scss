@@ -1,0 +1,33 @@
+.fb-options {
+  background: $color-white;
+  position: absolute;
+  width: 250px;
+  right: 17px;
+  top: 40px;
+  border: 1px solid #B4B4B4;
+  border-radius: 5px;
+  display: none;
+
+  &__underline {
+    border-bottom: 1px solid #E9EBEE;
+  }
+
+  &--show {
+    display: block;
+  }
+
+  a {
+    font-size: 11px;
+    color: $color-black;
+    font-weight: normal;
+    display: block;
+    // background: green;
+    padding: 10px 30px;
+    margin: 5px 0;
+  }
+
+  a:hover {
+    background: $login-btn-bg;
+    color: $color-white;
+  }
+}

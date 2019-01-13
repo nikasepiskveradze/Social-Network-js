@@ -7,10 +7,16 @@ import chat from './Chat';
 class Profile {
   constructor() {
     this.profilePost = '.fb-post';
+
     this.text = '#text';
     this.publish = '#publish';
     this.contacts = '#contacts';
+
     this.chat = '.fb-chat-show';
+
+    this.options = '#options';
+    this.logOut = '#log-out';
+    this.profileOptions = '.fb-options';
     this.user = JSON.parse(localStorage.getItem('userLogged'));
     
     this.loadEvents();
@@ -29,10 +35,20 @@ class Profile {
       });
     });
 
-    document.querySelector(this.profilePost).addEventListener('click', this.removePost.bind(this));
-
     // Publish
     document.querySelector(this.publish).addEventListener('click', this.addPost.bind(this));
+
+    // Remove Post
+    document.querySelector(this.profilePost).addEventListener('click', this.removePost.bind(this));
+
+    // Options
+    document.querySelector(this.options).addEventListener('click', (e) => {
+      console.log('click');
+      document.querySelector(this.profileOptions).classList.toggle('fb-options--show');
+
+      e.preventDefault();
+    });
+    
 
     // Chat Events
     document.querySelector(this.contacts).addEventListener('click', chat.showChat);

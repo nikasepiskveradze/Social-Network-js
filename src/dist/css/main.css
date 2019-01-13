@@ -688,6 +688,8 @@ textarea:focus {
         margin-right: 0.5em;
         width: 24px;
         height: 24px; }
+    .fb-pg-header__content__rightside {
+      position: relative; }
 
 .fb-search__find {
   font-size: 1.4rem;
@@ -756,6 +758,30 @@ textarea:focus {
     font-size: 1.3rem;
     color: #fff;
     font-weight: bold; }
+
+.fb-options {
+  background: #fff;
+  position: absolute;
+  width: 250px;
+  right: 17px;
+  top: 40px;
+  border: 1px solid #B4B4B4;
+  border-radius: 5px;
+  display: none; }
+  .fb-options__underline {
+    border-bottom: 1px solid #E9EBEE; }
+  .fb-options--show {
+    display: block; }
+  .fb-options a {
+    font-size: 11px;
+    color: #000;
+    font-weight: normal;
+    display: block;
+    padding: 10px 30px;
+    margin: 5px 0; }
+  .fb-options a:hover {
+    background: #29487d;
+    color: #fff; }
 
 .fb-pg-bar {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);

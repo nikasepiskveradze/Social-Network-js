@@ -1,5 +1,65 @@
 {
   "users": [
-    
+    {
+      "name": "Natia",
+      "lastname": "Aludauri",
+      "username": "aludauri",
+      "email": "random@gmail.com",
+      "password": "46fc3a70db6ebc6ea61ee68edbe9a2e1ab068fc4",
+      "birth": "2019-01-17",
+      "gender": "female",
+      "image": "https://picsum.photos/300/300?image=24",
+      "cover": "https://picsum.photos/820/306?image=41",
+      "friends": [
+        {
+          "name": "Mariam",
+          "lastname": "Sarjveladze",
+          "image": "https://picsum.photos/300/300?image=51",
+          "active": true
+        },
+        {
+          "name": "Tornike",
+          "lastname": "Gagadze",
+          "image": "https://picsum.photos/300/300?image=57",
+          "active": true
+        },
+        {
+          "name": "Iuri",
+          "lastname": "Sajaia",
+          "image": "https://picsum.photos/300/300?image=3",
+          "active": true
+        },
+        {
+          "name": "Nika",
+          "lastname": "Sepiskveradze",
+          "image": "https://picsum.photos/300/300?image=57",
+          "active": true
+        },
+        {
+          "name": "Natia",
+          "lastname": "Aludauri",
+          "image": "https://picsum.photos/300/300?image=47",
+          "active": true
+        }
+      ],
+      "posts": [
+        {
+          "date": "January 13 At 0:10",
+          "image": "https://picsum.photos/500/300?image=9",
+          "body": "ქალების ქალი და კაცების კაცი."
+        },
+        {
+          "date": "January 13 At 0:10",
+          "image": "https://picsum.photos/500/300?image=67",
+          "body": "ჰელოუ ფეშენ თივი, აი ემ ზაური ფრომ მახინჯაური აი ლაიქ ხმაური ენდ ტრანინაური."
+        },
+        {
+          "date": "January 13 At 17:29",
+          "image": "https://picsum.photos/500/300?image=83",
+          "body": "ახალი პოსტი მაგარია."
+        }
+      ],
+      "id": 1
+    }
   ]
 }

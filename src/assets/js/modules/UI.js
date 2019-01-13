@@ -12,58 +12,86 @@ class UI {
 
   profileNavRender(user) {
     const nav = document.querySelector(this.profileNav);
-    let output = `
-      <li class="fb-profile-nav__item">
-        <a href="#" class="fb-profile-nav__item__info">
-          <img src="${user.image}" alt="">
-          <span>${user.name}</span>
-        </a>
-      </li>
-    `;
 
-    // nav.insertBefore(output, nav.firstElementChild);
-    nav.innerHTML = output + nav.innerHTML;
+    const li = document.createElement('li');
+    li.className = 'fb-profile-nav__item';
+
+    const anchor = document.createElement('a');
+    anchor.className = 'fb-profile-nav__item__info';
+    anchor.setAttribute('href', '#');
+
+    const img = document.createElement('img');
+    img.src = user.image;
+
+    const span = document.createElement('span');
+    span.textContent = user.name;
+
+    anchor.appendChild(img);
+    anchor.appendChild(span);
+
+    li.appendChild(anchor);
+
+    nav.insertBefore(li, nav.firstElementChild);
   }
 
   profilePersonalRender(user) {
     const person = document.querySelector(this.profilePersonal);
-    let output = `
-      <img class="fb-personal__image" src="${user.image}" alt="">
-    
-      <h2 class="fb-personal__name">${user.name} ${user.lastname}</h2>
-      <h3 class="fb-personal__username">@${user.username}</h3>
-    `;
 
-    person.innerHTML = output + person.innerHTML;
+    const img = document.createElement('img');
+    img.className = 'fb-personal__image';
+    img.src = user.image;
+
+    const h2 = document.createElement('h2');
+    h2.className = 'fb-personal__name';
+    h2.textContent = `${user.name} ${user.lastname}`;
+
+    const h3 = document.createElement('h3');
+    h3.className = 'fb-personal__username';
+    h3.textContent = `@${user.username}`;
+
+    person.insertBefore(h3, person.firstElementChild);
+    person.insertBefore(h2, person.firstElementChild);
+    person.insertBefore(img, person.firstElementChild);
   }
 
   profileCoverRender(user) {
     const cover = document.querySelector(this.profileCover);
-    let output = `<a href="#"><img src="${user.cover}" alt="Cover"></a>`;
 
-    cover.innerHTML = output;
+    const img = document.createElement('img');
+    img.src = user.cover;
+
+    cover.appendChild(img);
   }
 
   profileContactRender(user) {
     const contact = document.querySelector(this.profileContact);
-    let output = ``;
 
     user.friends.forEach((friend) => {
-      output += `
-        <div class="fb-contact__item">
-          <div class="fb-contact__item__info">
-            <img src="${friend.image}" alt="Profile Photo">
-            <span>${friend.name} ${friend.lastname}</span>
-          </div>`;
-        
-        if(friend.active) {
-          output += `<span class="green-dot"></span>`;
-        }
+      const item = document.createElement('div');
+      item.className = 'fb-contact__item';
 
-        output += `</div>`;
+      const info = document.createElement('div');
+      info.className = 'fb-contact__item__info';
+
+      const img = document.createElement('img');
+      img.src = friend.image;
+
+      const span = document.createElement('span');
+      span.textContent = `${friend.name} ${friend.lastname}`;
+
+      info.appendChild(img);
+      info.appendChild(span);
+
+      item.appendChild(info);
+
+      if(friend.active) {
+        const span = document.createElement('span');
+        span.className = 'green-dot';
+        item.appendChild(span);
+      }
+
+      contact.appendChild(item);
     });
-
-    contact.innerHTML += output;
   }
 
   profilePostRender(user) {

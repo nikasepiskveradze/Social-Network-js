@@ -762,9 +762,9 @@ textarea:focus {
 .fb-options {
   background: #fff;
   position: absolute;
-  width: 250px;
+  width: 230px;
   right: 17px;
-  top: 40px;
+  top: 37px;
   border: 1px solid #B4B4B4;
   border-radius: 5px;
   display: none; }
@@ -782,6 +782,16 @@ textarea:focus {
   .fb-options a:hover {
     background: #29487d;
     color: #fff; }
+
+.fb-options::before {
+  content: " ";
+  position: absolute;
+  top: -12px;
+  right: 3px;
+  margin-left: -5px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent; }
 
 .fb-pg-bar {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);

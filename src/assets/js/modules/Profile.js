@@ -41,13 +41,14 @@ class Profile {
     // Remove Post
     document.querySelector(this.profilePost).addEventListener('click', this.removePost.bind(this));
 
-    // Options
+    // Show Options
     document.querySelector(this.options).addEventListener('click', (e) => {
-      console.log(e.target);
-      
+      document.querySelector(this.profileOptions).classList.toggle('fb-options--show');
       e.preventDefault();
-    });
+    }); 
     
+    // Log Out
+    document.querySelector(this.logOut).addEventListener('click', this.logOutFromProfile.bind(this));
 
     // Chat Events
     document.querySelector(this.contacts).addEventListener('click', chat.showChat);
@@ -100,6 +101,11 @@ class Profile {
         modal.openModal('Post Deleted...', 'You successfully deleted post...');
       });
     }
+  }
+
+  logOutFromProfile() {
+    localStorage.removeItem('userLogged');
+    window.location.href = 'http://localhost:3001/';
   }
 }
 

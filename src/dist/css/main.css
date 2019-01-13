@@ -818,9 +818,10 @@ textarea:focus {
   background: #fff;
   margin-bottom: 1em; }
   .fb-create-post__header {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
     padding-bottom: 0.5em;
-    font-weight: bold;
+    font-weight: 600;
     color: #606770;
     border-bottom: 1px solid #dddfe2; }
   .fb-create-post__body {
@@ -865,16 +866,22 @@ textarea:focus {
 
 .fb-post__header {
   display: flex;
-  align-items: center; }
+  justify-content: space-between; }
+  .fb-post__header__user {
+    display: flex;
+    align-items: center; }
   .fb-post__header__info {
     margin-left: 0.7em; }
     .fb-post__header__info__name {
       font-weight: bold;
-      color: #0c53aa;
       margin-bottom: 0.25em; }
     .fb-post__header__info__date {
       color: #77777a;
       font-size: 1.2rem; }
+  .fb-post__header__delete i {
+    color: #616770;
+    font-size: 2.4rem;
+    cursor: pointer; }
   .fb-post__header img {
     width: 40px;
     height: 40px;

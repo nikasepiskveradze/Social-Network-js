@@ -12,14 +12,19 @@
 
   &__header {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+
+    &__user {
+      display: flex;
+      align-items: center;
+    }
 
     &__info {
       margin-left: 0.7em;
 
       &__name {
         font-weight: bold;
-        color: #0c53aa;
+        // color: #0c53aa;
         margin-bottom: 0.25em;
       }
 
@@ -27,6 +32,12 @@
         color: #77777a;
         font-size: $size-12;
       }
+    }
+
+    &__delete i {
+      color: #616770;
+      font-size: $size-24;
+      cursor: pointer;
     }
 
     img {

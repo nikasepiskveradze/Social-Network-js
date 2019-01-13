@@ -78,11 +78,17 @@ class UI {
       output += `
         <div class="fb-post__item">
           <div class="fb-post__header">
-            <img src="${image}" alt="">
+            <div class="fb-post__header__user">
+              <img src="${image}" alt="">
 
-            <div class="fb-post__header__info">
-              <p class="fb-post__header__info__name"><a href="#">${name} ${lastname}</a></p>
-              <p class="fb-post__header__info__date">${post.date}</p>
+              <div class="fb-post__header__info">
+                <p class="fb-post__header__info__name"><a href="#">${name} ${lastname}</a></p>
+                <p class="fb-post__header__info__date">${post.date}</p>
+              </div>
+            </div>
+
+            <div class="fb-post__header__delete">
+              <i>&times</i>
             </div>
           </div>
 

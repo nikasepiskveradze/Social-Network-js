@@ -9,9 +9,10 @@
   margin-bottom: 1em;
 
   &__header {
-    font-size: $size-14;
+    font-size: $size-13;
+    letter-spacing: 0.5px;
     padding-bottom: 0.5em;
-    font-weight: bold;
+    font-weight: 600;
     color: #606770;
     border-bottom: 1px solid $post-border-color;
   }

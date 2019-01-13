@@ -42,23 +42,7 @@
           "active": true
         }
       ],
-      "posts": [
-        {
-          "date": "January 13 At 0:10",
-          "image": "https://picsum.photos/500/300?image=9",
-          "body": "ქალების ქალი და კაცების კაცი."
-        },
-        {
-          "date": "January 13 At 0:10",
-          "image": "https://picsum.photos/500/300?image=67",
-          "body": "ჰელოუ ფეშენ თივი, აი ემ ზაური ფრომ მახინჯაური აი ლაიქ ხმაური ენდ ტრანინაური."
-        },
-        {
-          "date": "January 13 At 17:29",
-          "image": "https://picsum.photos/500/300?image=83",
-          "body": "ახალი პოსტი მაგარია."
-        }
-      ],
+      "posts": [],
       "id": 1
     }
   ]

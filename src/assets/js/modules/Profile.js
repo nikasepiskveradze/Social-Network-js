@@ -6,6 +6,7 @@ import chat from './Chat';
 
 class Profile {
   constructor() {
+    this.profilePost = '.fb-post';
     this.text = '#text';
     this.publish = '#publish';
     this.contacts = '#contacts';
@@ -16,6 +17,7 @@ class Profile {
   }
 
   loadEvents() {
+    // Post Events
     document.addEventListener('DOMContentLoaded', () => {
       this.getUser((userData) => {
         ui.profileNavRender(userData);
@@ -27,6 +29,9 @@ class Profile {
       });
     });
 
+    document.querySelector(this.profilePost).addEventListener('click', this.removePost.bind(this));
+
+    // Publish
     document.querySelector(this.publish).addEventListener('click', this.addPost.bind(this));
 
     // Chat Events
@@ -64,6 +69,20 @@ class Profile {
       this.getUser((data) => {
         data.posts.push(information);
         this.putPosts(data);
+      });
+    }
+  }
+
+  removePost(e) {
+    const item = e.target.parentElement.parentElement.parentElement;
+    if(item.classList.contains('fb-post__item')) {
+
+      let index = Array.from(item.parentElement.children).reverse().indexOf(item);
+
+      this.getUser((user) => {
+        user.posts.splice(index, 1);
+        this.putPosts(user);
+        modal.openModal('Post Deleted...', 'You successfully deleted post...');
       });
     }
   }

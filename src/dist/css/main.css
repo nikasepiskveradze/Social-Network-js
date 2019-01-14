@@ -434,7 +434,8 @@ html {
   font-size: 10px; }
 
 body {
-  font-family: SFUIText-Regular; }
+  font-family: SFUIText-Regular;
+  background: #e9ebee; }
 
 .container, .container-fluid {
   margin: 0 auto; }
@@ -657,6 +658,7 @@ textarea:focus {
       text-decoration: underline; }
 
 .fb-footer {
+  background: #fff;
   padding: 2.2em 0; }
   .fb-footer__lang-nav {
     padding: 0.8em 0;
@@ -796,7 +798,8 @@ textarea:focus {
 .fb-pg-bar {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
   position: sticky;
-  top: -4px; }
+  top: -4px;
+  background: #fff; }
   .fb-pg-bar__content {
     display: flex;
     justify-content: space-between; }

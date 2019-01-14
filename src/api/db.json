@@ -1,49 +1,5 @@
 {
   "users": [
-    {
-      "name": "Nika",
-      "lastname": "Sepiskveradze",
-      "username": "sepiskveradze",
-      "email": "random@gmail.com",
-      "password": "46fc3a70db6ebc6ea61ee68edbe9a2e1ab068fc4",
-      "birth": "2019-01-10",
-      "gender": "male",
-      "image": "https://picsum.photos/300/300?image=55",
-      "cover": "https://picsum.photos/820/306?image=89",
-      "friends": [
-        {
-          "name": "Mariam",
-          "lastname": "Sarjveladze",
-          "image": "https://picsum.photos/300/300?image=72",
-          "active": true
-        },
-        {
-          "name": "Tornike",
-          "lastname": "Gagadze",
-          "image": "https://picsum.photos/300/300?image=19",
-          "active": true
-        },
-        {
-          "name": "Iuri",
-          "lastname": "Sajaia",
-          "image": "https://picsum.photos/300/300?image=62",
-          "active": true
-        },
-        {
-          "name": "Nika",
-          "lastname": "Sepiskveradze",
-          "image": "https://picsum.photos/300/300?image=42",
-          "active": true
-        },
-        {
-          "name": "Natia",
-          "lastname": "Aludauri",
-          "image": "https://picsum.photos/300/300?image=78",
-          "active": true
-        }
-      ],
-      "posts": [],
-      "id": 1
-    }
+    
   ]
 }

@@ -1,13 +1,10 @@
 .modal {
   position: fixed;
-  // background: $color-white;
   top: calc(50% - 150px);
   left: calc(50% - 222px);
   width: 445px;
-  // height: 140px;
-  // transform: translate(-50%, -50%);
   z-index: 10;
-  border: 10px solid rgba(0, 0, 0, 0.4); //#818086
+  border: 10px solid rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   visibility: hidden;
   opacity: 0;

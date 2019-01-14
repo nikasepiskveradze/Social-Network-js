@@ -101,6 +101,8 @@ class UI {
     const lastname = user.lastname;
     const image = user.image;
 
+    pts.innerHTML = '';
+
     user.posts.forEach((post) => {
       const item = document.createElement('div');
       item.className = 'fb-post__item';

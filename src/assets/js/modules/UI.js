@@ -96,7 +96,6 @@ class UI {
 
   profilePostRender(user) {
     const pts = document.querySelector(this.profilePost);
-    // let output = '';
 
     const name = user.name;
     const lastname = user.lastname;
@@ -171,48 +170,84 @@ class UI {
   }
 
   profileChatRender(image, name) {
-    document.querySelector(this.chat).innerHTML = `
-      <div class="fb-chat">
-        <div class="fb-chat__header">
-          <div class="fb-chat__header__user">
-            <img class="fb-chat__header__user__image" src="${image}" alt="">
-            <div class="fb-chat__header__user__details">
-              <a href="#" class="fb-chat__header__user__details__link">${name}</a>
-              <span class="fb-chat__header__user__details__active">Active now</span>
-            </div>
-          </div>
+    const chatArea = document.querySelector(this.chat);
 
-          <div class="fb-chat__header__options">
-            <a href="#"><i class="fa fa-phone"></i></a>
-            <a href="#"><i class="fa fa-video-camera"></i></a>
-            <a href="#" id="fb-chat-close"><i class="fa fa-times"></i></a>
-          </div>
-        </div>
+    const chat = document.createElement('div');
+    chat.className = 'fb-chat';
 
-        <div class="fb-chat__content">
-          <p class="fb-chat__content__message">Hello ${name}</p>
-        </div>
+    // Header
+    const header = document.createElement('div');
+    header.className = 'fb-chat__header';
 
-        <div class="fb-chat__bottom">
-          <div class="fb-chat__bottom__input">
-            <input class="fb-chat__bottom__input__field" type="text" placeholder="Type a message">
-          </div>
+    const user = document.createElement('div');
+    user.className = 'fb-chat__header__user';
 
-          <div class="fb-chat__bottom__options">
-            <div class="fb-chat__bottom__options__left">
-              <i class="fa fa-file-image-o"></i>
-              <i class="fa fa-video-camera"></i>
-              <i class="fa fa-paperclip"></i>
-              <i class="fa fa-gift"></i>
-              <i class="fa fa-smile-o"></i>
-              <i class="fa fa-gamepad"></i>
-            </div>
-            <div class="fb-chat__bottom__options__right">
-              <i class="fa fa-thumbs-up"></i>
-            </div>
-          </div>
-        </div>
-      </div>`;
+    const img = document.createElement('img');
+    img.className = 'fb-chat__header__user__image';
+    img.src = image;
+
+    const details = document.createElement('div');
+    details.className = 'fb-chat__header__user__details';
+    details.innerHTML = `
+      <a href="#" class="fb-chat__header__user__details__link">${name}</a>
+      <span class="fb-chat__header__user__details__active">Active now</span>
+    `;
+
+    user.appendChild(img);
+    user.appendChild(details);
+
+    const options = document.createElement('div');
+    options.className = 'fb-chat__header__options';
+    options.innerHTML = `
+      <a href="#"><i class="fa fa-phone"></i></a>
+      <a href="#"><i class="fa fa-video-camera"></i></a>
+      <a href="#" id="fb-chat-close"><i class="fa fa-times"></i></a>
+    `;
+
+    header.appendChild(user);
+    header.appendChild(options);
+
+    // Content
+    const content = document.createElement('div');
+    content.className = 'fb-chat__content';
+    content.innerHTML = `
+      <p class="fb-chat__content__message">Hello ${name}</p>
+    `;
+
+    // Bottom
+    const bottom = document.createElement('div');
+    bottom.className = 'fb-chat__bottom';
+
+    const input = document.createElement('div');
+    input.className = 'fb-chat__bottom__input';
+    input.innerHTML = `<input class="fb-chat__bottom__input__field" type="text" placeholder="Type a message">`;
+
+    const bottomOptions = document.createElement('div');
+    bottomOptions.className = 'fb-chat__bottom__options';
+    bottomOptions.innerHTML = `
+      <div class="fb-chat__bottom__options__left">
+        <i class="fa fa-file-image-o"></i>
+        <i class="fa fa-video-camera"></i>
+        <i class="fa fa-paperclip"></i>
+        <i class="fa fa-gift"></i>
+        <i class="fa fa-smile-o"></i>
+        <i class="fa fa-gamepad"></i>
+      </div>
+      <div class="fb-chat__bottom__options__right">
+        <i class="fa fa-thumbs-up"></i>
+      </div>
+    `;
+
+    bottom.appendChild(input);
+    bottom.appendChild(bottomOptions);
+
+    chat.appendChild(header);
+    chat.appendChild(content);
+    chat.appendChild(bottom);
+
+    chatArea.innerHTML = '';
+
+    chatArea.appendChild(chat);
   }
 
   clearTextArea() {

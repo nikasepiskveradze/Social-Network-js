@@ -96,48 +96,77 @@ class UI {
 
   profilePostRender(user) {
     const pts = document.querySelector(this.profilePost);
-    let output = '';
+    // let output = '';
 
-    let name = user.name;
-    let lastname = user.lastname;
-    let image = user.image;
+    const name = user.name;
+    const lastname = user.lastname;
+    const image = user.image;
 
-    user.posts.reverse().forEach((post) => {
-      output += `
-        <div class="fb-post__item">
-          <div class="fb-post__header">
-            <div class="fb-post__header__user">
-              <img src="${image}" alt="">
+    user.posts.forEach((post) => {
+      const item = document.createElement('div');
+      item.className = 'fb-post__item';
 
-              <div class="fb-post__header__info">
-                <p class="fb-post__header__info__name"><a href="#">${name} ${lastname}</a></p>
-                <p class="fb-post__header__info__date">${post.date}</p>
-              </div>
-            </div>
+      // Header
+      const header = document.createElement('div');
+      header.className = 'fb-post__header';
 
-            <div class="fb-post__header__delete">
-              <i>&times</i>
-            </div>
-          </div>
+      const user = document.createElement('div');
+      user.className = 'fb-post__header__user';
 
-          <div class="fb-post__content">
-            <p>${post.body}</p>
-          </div>
+      const userImg = document.createElement('img');
+      userImg.src = image;
 
-          <div class="fb-post__photo">
-            <a href="#"><img src="${post.image}" alt="Post Photo"></a>
-          </div>
+      const info = document.createElement('div');
+      info.className = 'fb-post__header__info';
 
-          <div class="fb-post__footer">
-            <a href="#"><i class="fa fa-thumbs-o-up"></i> Like</a>
-            <a href="#"><i class="fa fa-comment-o"></i> Comments</a>
-            <a href="#"><i class="fa fa-share"></i> Share</a>
-          </div>
-        </div>
+      const userName = document.createElement('p');
+      userName.className = 'fb-post__header__info__name';
+      userName.innerHTML = `<a href="#">${name} ${lastname}</a>`;
+
+      const date = document.createElement('p');
+      date.className = 'fb-post__header__info__date';
+      date.textContent = post.date;
+
+      info.appendChild(userName);
+      info.appendChild(date);
+
+      user.appendChild(userImg);
+      user.appendChild(info);
+
+      const dlt = document.createElement('div');
+      dlt.className = 'fb-post__header__delete';
+      dlt.innerHTML = `<i>&times</i>`;
+
+      header.appendChild(user);
+      header.appendChild(dlt);
+
+      // Content
+      const content = document.createElement('div');
+      content.className = 'fb-post__content';
+      content.innerHTML = `<p>${post.body}</p>`;
+
+      // Photo
+      const photo = document.createElement('div');
+      photo.className = 'fb-post__photo';
+      photo.innerHTML = `<a href="#"><img src="${post.image}" alt="Post Photo"></a>`;
+
+      // Footer
+      const footer = document.createElement('div');
+      footer.className = 'fb-post__footer';
+      footer.innerHTML = `
+        <a href="#"><i class="fa fa-thumbs-o-up"></i> Like</a>
+        <a href="#"><i class="fa fa-comment-o"></i> Comments</a>
+        <a href="#"><i class="fa fa-share"></i> Share</a>
       `;
+
+      item.appendChild(header);
+      item.appendChild(content);
+      item.appendChild(photo);
+      item.appendChild(footer);
+
+      pts.insertBefore(item, pts.firstElementChild);
     });
 
-    pts.innerHTML = output;
     this.clearTextArea();
   }
 
